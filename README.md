@@ -45,7 +45,7 @@ This will move the migration file, seeder file and config file to your app. You 
 
 ### Step 3 - Adding SMS credentials
 - Add the env keys to your `.env` file
-- Or edit the config/laravel-sms.php file
+- Or edit the config/laravel-sms-pro.php file
 
 ## Usage
 ```php

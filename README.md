@@ -51,10 +51,17 @@ This will move the migration file, seeder file and config file to your app. You 
 ```php
 //using SMSQ Provider
 use use Tomal2000\LaravelSmsPro\Concrete\SMSQ;
+
 sms = new SMSQ();
-$sms->text($message)->to(8801307366733)->from('MyLaravel')->send(); //return true/false for success/failed
-sms->getResponse() //also you can get response payload using this
-sms->getException() //also you can get exception if error occured using this,exceptions will be logged in your laravel log file
+
+$sms->text('This Laravel Test Message')->to('8801307366733')->from('MyLaravel')->send(); //return true/false for success/failed
+
+//to('880130736673','8801736744457') use like this if you want to sent message to multiple numbers. Country Code is Mandatory
+//from(string 'MyLaravel') Thsi Optional If Not set it then got Sender Id Form SMS_SENDER env key from .env or laravel-sms-pro.php file.
+
+$sms->getResponse(); //also you can get response payload using this
+
+$sms->getException(); //also you can get exception if error occured using this,exceptions will be logged in your laravel log file
 ```
 
 ### Available SMS Providers

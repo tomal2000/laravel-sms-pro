@@ -1,0 +1,26 @@
+{
+    "name": "tomal2000/laravel-sms-pro",
+    "description": "A Package For Sending Sms From Various Bulk Sms Service Provider",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tomal2000\\LaravelSmsPro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tomal Sen",
+            "email": "tomalsen2000@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tomal2000\\LaravelSmsPro\\LaravelSmsProServiceProvider"
+            ]
+        }
+    }
+}

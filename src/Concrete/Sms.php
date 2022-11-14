@@ -11,8 +11,7 @@ abstract class Sms
     protected $recipients = [];
     protected $sender;
     protected $response;
-    protected $client;
-    protected $request;
+
 
     /**
      * @var \Exception
